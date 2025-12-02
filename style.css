@@ -1,0 +1,86 @@
+body {
+    margin: 0;
+    background: linear-gradient(to bottom right, #ffdde1, #ee9ca7);
+    font-family: "Georgia", serif;
+    text-align: center;
+    color: #552233;
+}
+
+h1, h2 {
+    font-weight: normal;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Passwort-Seite */
+#password-screen {
+    margin-top: 120px;
+}
+
+#password {
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 12px;
+    border: 2px solid #cc7799;
+}
+
+button {
+    padding: 10px 18px;
+    font-size: 18px;
+    margin-top: 10px;
+    background: #ffb3c6;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #ff9db3;
+}
+
+/* Herzanimation */
+.heart-animation::before,
+.heart-animation::after {
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    width: 50px;
+    height: 80px;
+    background: #ff6f91;
+    border-radius: 50px 50px 0 0;
+    transform: translateX(-50%) rotate(-45deg);
+    animation: heartbeat 1.2s infinite;
+}
+
+.heart-animation::after {
+    transform: translateX(-50%) rotate(45deg);
+}
+
+@keyframes heartbeat {
+    0% { transform: translateX(-50%) scale(1); }
+    50% { transform: translateX(-50%) scale(1.2); }
+    100% { transform: translateX(-50%) scale(1); }
+}
+
+/* Slideshow */
+.slideshow-container img {
+    width: 80%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px #aa5577;
+}
+
+/* Final Message */
+.final-message {
+    font-size: 24px;
+    line-height: 1.6;
+    padding: 20px;
+    margin-top: 40px;
+    background: #ffe3ec;
+    border-radius: 20px;
+    box-shadow: 0px 0px 15px #d48aa6;
+}

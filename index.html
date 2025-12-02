@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Für uns </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="password-screen">
+    <h1>Für meine wundervolle Liebe Emmi</h1>
+    <p>Gib unser Datum ein:</p>
+    <input type="password" id="password" placeholder="TTMMJJJJ">
+    <button onclick="checkPassword()">Weiter</button>
+</div>
+
+<div id="main" class="hidden">
+
+    <div class="heart-animation"></div>
+
+    <h1>Für dich Emmi</h1>
+    <p class="intro-text">Danke für jeden Moment. Danke, dass du mein Leben schöner machst.</p>
+
+    <h2>Unsere Erinnerungen 📸</h2>
+    <div class="slideshow-container">
+        <img id="slide" src="" alt="Erinnerung">
+    </div>
+
+    <h2>Ein kleines Quiz vom profi Programmierer</h2>
+    <div class="quiz">
+        <p id="quiz-question"></p>
+        <button onclick="answer(true)">Ja </button>
+        <button onclick="answer(false)">Nein </button>
+    </div>
+
+    <p id="final-message" class="hidden final-message">
+        Du bist das Beste, was mir je passiert ist.  
+        Ich liebe dich — heute, morgen und für immer. 
+    </p>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
